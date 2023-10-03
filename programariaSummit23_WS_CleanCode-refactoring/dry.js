@@ -9,8 +9,16 @@ function saudacaoRachel() {
 const mensagem1 = saudacaoRoss();
 const mensagem2 = saudacaoRachel();
 
-console.log(mensagem1); 
-console.log(mensagem2); 
+console.log(mensagem1); // Saída: "Olá, Ross! Bem-vindo(a) ao Central Perk, 
+  //o café mais amigável de Nova York!"
+  console.log(mensagem2); // Saída: "Olá, Rachel! Bem-vindo(a) ao Central Perk, o 
+  //café mais amigável de Nova York!"
+
+//   Neste exemplo, temos duas funções separadas, uma para saudar "Ross" e outra 
+//   para saudar "Rachel". Isso não segue o princípio DRY, pois há repetição de código sem necessidade.
+//   A segunda versão, sem DRY, requer a criação de uma função separada para cada personagem, o que 
+//   pode se tornar trabalhoso e confuso quando houver muitos personagens.
+
 
 //Refatorada
 function saudacaoFriends(nome) {
@@ -20,5 +28,8 @@ function saudacaoFriends(nome) {
 const mensagens1 = saudacaoFriends("Ross");
 const mensagens2 = saudacaoFriends("Rachel");
 
-console.log(mensagem1); 
-console.log(mensagem2); 
+console.log(mensagem1); // Saída: "Olá, Ross! Bem-vindo(a) ao Central Perk, o café mais amigável de Nova York!"
+console.log(mensagem2); // Saída: "Olá, Rachel! Bem-vindo(a) ao Central Perk, o café mais amigável de Nova York!"
+
+//   Neste exemplo, a função saudacaoFriends é reutilizável e segue o princípio DRY, 
+//   pois permite saudar qualquer personagem de "Friends" de forma genérica.
