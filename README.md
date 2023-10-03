@@ -1,4 +1,4 @@
-P<h2 align="center">
+<h2 align="center">
   Workshop: Clean Code | Programaria
 </h2>
 
